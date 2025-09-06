@@ -1,0 +1,13 @@
+import math
+
+def circumference(radius):
+    return 2 * math.pi * radius
+
+try:
+    r = float(input("Enter radius: "))
+    if r >= 0:
+        print("Circumference:", round(circumference(r), 2))
+    else:
+        print("Radius can't be negative!")
+except:
+    print("Please enter a valid number.")
